@@ -18,6 +18,6 @@ DiscordHook::send(new Message(new User("WEBHOOK URL", "USERNAME", "AVARAR_URL"),
 
 Send With Embed(s)...
 ```php
-print_r(DiscordHook::send(new Message(new User("WEBHOOK URL", "USERNAME", "AVARAR_URL"), "MSG",new Embed("TITLE","DESCRIPTION","URL","COLOUR(int)")))); //single embed
-print_r(DiscordHook::send(new Message(new User("WEBHOOK URL", "USERNAME", "AVARAR_URL"), "MSG",[new Embed("TITLE","DESCRIPTION","URL","COLOUR(int)"),new Embed("TITLE2","DESCRIPTION","URL","COLOUR(int)")]))); //multiple embeds
+print_r(DiscordHook::send(new Message(new User("WEBHOOK URL", "USERNAME", "AVARAR_URL"), "MSG",new Embed("TITLE","DESCRIPTION","URL","COLOUR(hex)")))); //single embed
+print_r(DiscordHook::send(new Message(new User("WEBHOOK URL", "USERNAME", "AVARAR_URL"), "MSG",[new Embed("TITLE","DESCRIPTION","URL","COLOUR(hex)"),new Embed("TITLE2","DESCRIPTION","URL","COLOUR(int)")]))); //multiple embeds
 ```
